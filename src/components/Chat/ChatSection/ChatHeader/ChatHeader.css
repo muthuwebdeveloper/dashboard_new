@@ -1,0 +1,33 @@
+.chatheader .ch-head {
+  display: flex;
+  align-items: center;
+  background: var(--background);
+  padding: 6px 15px;
+  border-top-left-radius: 8px;
+  /* border-top-right-radius: 8px; */
+}
+.chatheader .ch-head .ch-head-img {
+  width: 3.2rem;
+  border-radius: 50%;
+  height: 3.2rem;
+}
+.chatheader .ch-head .ch-title {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatheader .ch-head .ch-title .ch-text {
+}
+.chatheader .ch-head .ch-title .ch-text h6 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+.chatheader .ch-head .ch-title .ch-text p {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}

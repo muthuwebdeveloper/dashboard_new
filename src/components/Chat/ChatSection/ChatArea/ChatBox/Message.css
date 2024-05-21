@@ -1,0 +1,238 @@
+@import "../../../ChatMain/Chatmain.css";
+
+.msg-text {
+  display: flex;
+}
+
+.msg-text .right p {
+  margin-bottom: 0px;
+}
+
+.msg-text .right {
+  display: inline-flex;
+  max-width: 60%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; */
+}
+
+.msg-text .right .text {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+.msg-text .right .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+
+.timeline span {
+  margin-bottom: 15px;
+  /* text-align: center; */
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 6px 15px;
+  background: var(--color);
+  border-radius: 8px;
+}
+.msg-img {
+  display: flex;
+}
+.msg-img .right {
+  display: inline-flex;
+  max-width: 27%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.msg-img .right .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+
+.msg-img .right .chat-text-img {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+.msg-img .right img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+.msg-vdo {
+  display: flex;
+}
+.msg-vdo .right {
+  display: inline-flex;
+  max-width: 30%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.msg-vdo .right .chat-text-vdo {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+.msg-vdo .right .chat-vdo {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+.msg-vdo .right .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+.msg-ado {
+  display: flex;
+}
+.msg-ado .right {
+  display: inline-flex;
+  max-width: 100%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+
+.msg-ado .right .chat-text-ado {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+
+.msg-ado .right .chat-ado {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 10px;
+}
+.msg-ado .right .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+.msg-pdf {
+  display: flex;
+}
+
+.msg-pdf .right {
+  display: inline-flex;
+  max-width: 26.1%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+.msg-pdf .right .pdf-chat-side {
+  display: flex;
+  background: #fff;
+  padding: 7px;
+  border-radius: 8px;
+}
+.msg-pdf .right .pdf-chat-side .pdf-chat-img {
+  color: var(--background);
+}
+.msg-pdf .right .pdf-chat-side .text .pdf-name {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.msg-pdf .right .pdf-chat-side .text .pdf-size {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+.msg-pdf .right p {
+  margin-bottom: 0px;
+}
+.msg-pdf .right .chat-text-pdf {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+.msg-pdf .right .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+
+/* .msg-pdf:hover .msg-three {
+  display: block;
+}
+
+.msg-three {
+  display: none;
+} */
+
+.threedots-msg {
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border-radius: 50%;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+  .msg-pdf .right {
+    max-width: 100%;
+  }
+  .msg-vdo .right {
+    max-width: 100%;
+  }
+  .msg-ado .right {
+    max-width: 100%;
+  }
+  .msg-img .right {
+    max-width: 100%;
+  }
+  .msg-text .right {
+    max-width: 100%;
+  }
+}
+.reply-img {
+  display: flex;
+}
+.reply-img .right {
+  max-width: 45%;
+  background: var(--color);
+  padding: 10px;
+  border-radius: 0px 10px 10px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6;
+}
+.reply-img .right .right-head {
+}
+.reply-img .right .right-head h6 {
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: var(--background);
+}
+.reply-img .right .right-head .reply-icon {
+}
+.reply-img .right .right-head p {
+  margin-bottom: 0px;
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+.reply-img .right .img-reply {
+}
+.reply-img .right .img-reply .img-reply-img {
+  width: 3rem;
+  border-radius: 6px;
+  margin-left: 10px;
+}

@@ -1,0 +1,336 @@
+.chat-sidebar {
+  margin: 20px 0px 0px;
+  width: 50%;
+}
+.side-head {
+  padding: 15px;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  border-top-right-radius: 8px;
+}
+.side-head .btn-arrow {
+  font-size: 24px;
+  color: #fff;
+}
+.side-head h6 {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.side-content {
+  /* height: 100%; */
+  width: 100%;
+  padding: 0px 15px;
+}
+.side-content .side-profile {
+  padding: 12px 0px;
+}
+.side-content .side-profile .side-pro-img {
+  margin: 0 auto;
+  width: 6rem;
+  margin-bottom: 10px;
+  position: relative;
+}
+.side-content .side-profile .side-pro-img .btn-side-cam {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: var(--background);
+  color: #fff;
+  border: none;
+  padding: 0px 5px 3px;
+}
+.side-content .side-profile .side-pro-img .img-fluid {
+  max-width: 100%;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+.side-content .side-profile .side-pro-text {
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.side-content .side-btns {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.side-content .side-btns .side-btn {
+  border: 1px solid #ecece5;
+  border-radius: 8px;
+  padding: 10px;
+  width: 5rem;
+}
+.side-content .side-btns .side-btn .side-btn-icon {
+  font-size: 20px;
+}
+.side-content .side-btns .active {
+  background: var(--color);
+  color: #000;
+}
+.side-content .side-btn p {
+  margin-bottom: 0px;
+}
+.side-tabs nav {
+  display: flex;
+  justify-content: space-between;
+}
+.side-tabs nav button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  border-bottom: 2px solid #e6e6e6;
+  font-weight: 500;
+  padding: 4px;
+}
+.side-tabs nav .active {
+  border-bottom: 2px solid var(--background);
+  color: var(--background);
+}
+.side-tabs .tab-content-side {
+  padding: 10px 0px;
+  overflow-y: scroll;
+  height: 327px;
+}
+
+.side-tabs .tab-content-side::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.side-tabs .tab-content-side::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+.side-tabs .tab-content-side::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--background);
+  height: 50px;
+}
+
+.side-tabs .tab-content-side p {
+  margin-bottom: 0px;
+}
+.side-tabs .tab-content-side .tab-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.chat-message-side {
+  padding-right: 10px;
+}
+/* .chat-message-side p {
+  margin-bottom: 10px;
+} */
+.chat-message-side .date-side-ch {
+  background: #eff5fc;
+  border-radius: 8px;
+  padding: 6px 15px;
+  text-transform: capitalize;
+  color: rgb(139, 139, 139);
+  font-size: 0.75rem;
+}
+.chat-message-side .pdf-chat-side {
+  display: flex;
+  background: #fff;
+  padding: 7px;
+  border-radius: 8px;
+  border: 1px solid #eff5fc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.chat-message-side .pdf-chat-side .text .pdf-name {
+  font-size: 0.875rem;
+  font-weight: 400;
+  width: -3rem;
+  width: 219px;
+  word-wrap: break-word;
+}
+.chat-message-side .pdf-chat-side .text .pdf-name a {
+  color: black;
+  text-decoration: none;
+}
+.chat-message-side .pdf-chat-side .text .pdf-size {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--background);
+}
+.chat-message-side p {
+  margin-bottom: 0px;
+}
+.chat-message-side .chat-text-pdf {
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+.chat-message-side .chat-time {
+  margin-bottom: 0px;
+  text-align: end;
+  color: var(--background);
+  font-size: 0.8rem;
+}
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  margin-top: 20px;
+}
+.tab-content .theme-box {
+  border: 1px solid #ecece5;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tab-content .circlepink {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: white; /* Background color for the circlepink */
+  border-radius: 50%; /* Ensures the circlepink shape */
+  position: relative;
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.tab-content .circlepink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #f75790; /* Background color for the other half of the circle */
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+.tab-content .circlegreen {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: white; /* Background color for the circlegreen */
+  border-radius: 50%; /* Ensures the circlegreen shape */
+  position: relative;
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.tab-content .circlegreen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #17a2b8; /* Background color for the other half of the circle */
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+.tab-content .circlered {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: white; /* Background color for the circle */
+  border-radius: 50%; /* Ensures the circle shape */
+  position: relative;
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.tab-content .circlered::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #ff4c00; /* Background color for the other half of the circle */
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+.tab-content .circleblue {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: white; /* Background color for the circleblue */
+  border-radius: 50%; /* Ensures the circleblue shape */
+  position: relative;
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.tab-content .circleblue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #2196f3;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+.tab-content .circlepurple {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  background-color: white; /* Background color for the circlepurple */
+  border-radius: 50%; /* Ensures the circlepurple shape */
+  position: relative;
+  /* border: 2px solid; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.tab-content .circlepurple::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  height: 100%;
+  background-color: #9554ff;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .chat-sidebar {
+    width: 100%;
+    position: absolute;
+    background: white;
+    z-index: 22;
+    right: 0;
+  }
+
+  .side-tabs .tab-content-side {
+    height: 471px;
+  }
+}
+
+.side-link-color {
+  color: var(--background);
+}
+
+.side-logo-img {
+  width: 5rem;
+  animation: rotateLogo 0.1s linear infinite;
+}
+
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

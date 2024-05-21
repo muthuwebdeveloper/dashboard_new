@@ -1,0 +1,127 @@
+const videoRef = useRef(null);
+const [savedAudioBlob, setSavedAudioBlob] = useState(null);
+const [openPicker, setopenPicker] = useState(0);
+const [chatinput, setChatInput] = useState("");
+
+const [isRecording, setIsRecording] = useState(false);
+const [recordedBlob, setRecordedBlob] = useState(null);
+const [FullRecordedBlob, setFullRecordedBlob] = useState(null);
+
+const [audio, setAudio] = useState(null);
+const [isPlaying, setIsPlaying] = useState(false);
+const [typedvalue, setTypedvalue] = useState("");
+
+
+const onStart = () => {
+  setIsRecording(true);
+  setAudio(null); // Reset audio when starting a new recording
+};
+
+const onStop = (recordedBlob) => {
+  setInputValue("Audio");
+  setIsRecording(false);
+  setRecordedBlob(recordedBlob.blob);
+  setFullRecordedBlob(recordedBlob);
+  setTogetblob(recordedBlob);
+  setSelectedImg(recordedBlob.blob);
+
+ 
+
+};
+
+const handlePlayPause = () => {
+  if (recordedBlob) {
+    if (audio) {
+      // If audio is present, toggle play/pause
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      setIsPlaying(!isPlaying);
+    } else {
+      // If audio is not present, create a new Audio element and start playing
+      const newAudio = new Audio(URL.createObjectURL(recordedBlob));
+      newAudio.play();
+      newAudio.addEventListener("ended", () => {
+        setIsPlaying(false);
+      });
+      setAudio(newAudio);
+      setIsPlaying(true);
+    }
+  }
+};
+
+const handleOpenCamera = async () => {};
+
+const handleClose = () => {
+  updateMicrophoneValue(0);
+};
+
+const handleemojonclick = () => {};
+
+const handleOpenPicker = (value) => {
+  setopenPicker(value);
+};
+
+const handleClick = (event, emojiObject) => {
+  onEmojiClick(event, emojiObject, chatinput);
+  handleChange(chatinput);
+};
+
+const handleCombinedChange = (event, emojiObject) => {
+  setChatInput(event.target.value);
+  handleChange(event, emojiObject);
+};
+
+const handleClearData = () => {
+  if (ClearInputField == 1) {
+    setClearInputField(0);
+  } else {
+    setClearInputField(1);
+  }
+};
+
+
+
+
+ 
+
+return (
+  <>
+    {microphone === 1 ? (
+      <>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h1>Audio Recorder</h1>
+          <CloseIcon onClick={handleClose} />
+        </div>
+
+        <div>
+          <ReactMic
+            record={isRecording}
+            className="sound-wave"
+            onStop={onStop}
+            onStart={onStart}
+            strokeColor="#000000"
+            backgroundColor="#FF4081"
+          />
+          <button onClick={() => setIsRecording(!isRecording)}>
+            {isRecording ? "Stop Recording" : "Start Recording"}
+          </button>
+          {recordedBlob && (
+            <div>
+              <button onClick={handlePlayPause}>
+                {isPlaying ? "Pause" : "Play"} Recorded Audio
+              </button>
+            </div>
+          )}
+        </div>
+      </>
+    ) : null}
+

@@ -1,0 +1,44 @@
+/* Default theme */
+:root {
+  --primary-blue: #2196f3;
+  --secondary-blue: #eff5fc;
+  --primary-green: #17a2b8;
+  --secondary-green: #eefdff;
+  --primary-pink: #f75790;
+  --secondary-pink: #feeaf1;
+  --primary-purple: #9554ff;
+  --secondary-purple: #f5efff;
+  --primary-red: #ff4c00;
+  --secondary-red: #ffefe8;
+}
+
+.pink-mode {
+  --background: var(--primary-pink);
+  --color: var(--secondary-pink);
+}
+.green-mode {
+  --background: var(--primary-green);
+  --color: var(--secondary-green);
+}
+.red-mode {
+  --background: var(--primary-red);
+  --color: var(--secondary-red);
+}
+.blue-mode {
+  --background: var(--primary-blue);
+  --color: var(--secondary-blue);
+}
+.purple-mode {
+  --background: var(--primary-purple);
+  --color: var(--secondary-purple);
+}
+
+@media screen and (max-width: 768px) {
+  .chat {
+    position: relative;
+  }
+  .mob-side {
+    position: absolute;
+    background-color: #fff;
+  }
+}

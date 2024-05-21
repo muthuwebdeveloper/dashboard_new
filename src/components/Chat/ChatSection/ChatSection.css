@@ -1,0 +1,19 @@
+.chatsection {
+  margin: 20px 0px 0px;
+  /* border-radius: 8px 0px 0px 0px; */
+  /* border: 1px solid; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  width: 100%;
+}
+
+.main-chat {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .main-chat {
+    position: relative;
+    /* width: 18.2rem; */
+    background: white;
+  }
+}

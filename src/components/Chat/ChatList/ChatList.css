@@ -1,0 +1,140 @@
+@import "../ChatMain/Chatmain.css";
+
+.chatlist {
+  margin: 20px 0px;
+  border-radius: 8px;
+  /* border: 1px solid; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.chatlist .cl-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 24px; */
+}
+.chatlist .cl-header h5 {
+  color: #333;
+  margin-bottom: 0px;
+}
+.chatlist .cl-header .cl-head img {
+  border: 1px solid #1877f2;
+  width: 3rem;
+  padding: 7px;
+  border-radius: 4px;
+}
+.chatlist .cl-header .logo {
+  margin-right: 10px;
+}
+
+.chatlist .cl-search {
+  padding: 15px 15px 8px 15px;
+}
+.chatlist .cl-search input {
+  border-color: var(--background);
+}
+.chatlist .cl-list {
+  overflow-y: auto;
+  height: calc(100vh - 187px);
+  padding: 15px;
+}
+
+.chatlist .cl-list::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.chatlist .cl-list::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+.chatlist .cl-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--background);
+  height: 100px;
+}
+
+.chatlist .cl-list .cl-card {
+  display: flex;
+  padding: 15px 0px;
+  border-bottom: 1px solid #ecece6;
+}
+.chatlist .cl-list .cl-card .cl-img {
+  width: 3.2rem;
+  border-radius: 50%;
+  height: 3.2rem;
+}
+.chatlist .cl-list .cl-card .cl-text {
+  width: 100%;
+  margin-left: 10px;
+}
+.chatlist .cl-list .cl-card .cl-text .cl-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.chatlist .cl-list .cl-card .cl-text .cl-title h6 {
+  color: var(--background);
+  font-size: 1rem;
+  margin-bottom: 0px;
+}
+.chatlist .cl-list .cl-card .cl-text .cl-title p {
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: var(--background);
+}
+.chatlist .cl-list .cl-card .cl-text .cl-para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatlist .cl-list .cl-card .cl-text .cl-para h6 {
+  font-weight: 400;
+  color: #8b8b8b;
+  margin-bottom: 0px;
+  font-size: 0.875rem;
+}
+.chatlist .cl-list .cl-card .cl-text .cl-para p {
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: white;
+  background-color: var(--background);
+  border-radius: 50%;
+  padding: 0px 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .chatlist .cl-list {
+    height: calc(100vh - 224px);
+  }
+}
+
+.contact-top {
+  background: var(--background);
+}
+.contact-middle {
+  background-color: var(--color);
+}
+.contact-middle::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.contact-middle::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+
+.contact-middle::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--background);
+  height: 100px;
+}
+
+.contact-search-title {
+  color: var(--background);
+}

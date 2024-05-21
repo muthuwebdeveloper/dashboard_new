@@ -1,0 +1,111 @@
+.overview {
+  //   .card {
+  .over_profile {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .over_profile_img {
+      width: 5rem;
+      border-radius: 50%;
+    }
+  }
+  .overview_text {
+    margin-left: 1rem;
+    h3 {
+      font-weight: 800;
+      font-size: 2rem;
+    }
+    p {
+    }
+  }
+  .overview_card_text {
+    .overview_text_value {
+      display: flex;
+      justify-content: space-between;
+      h3 {
+        span {
+          font-weight: 500;
+          font-size: 2.2rem;
+        }
+      }
+      p {
+      }
+      .overview_icon {
+        border-radius: 8px;
+        height: 3rem;
+        width: 3rem;
+        display: grid;
+        place-items: center;
+        &.over_icon1 {
+          background: $lg-red;
+        }
+        &.over_icon2 {
+          background: $lg-green;
+        }
+        &.over_icon3 {
+          background: $lg-purple;
+        }
+        &.over_icon4 {
+          background: $lg-yellow;
+        }
+        &.over_icon5 {
+          background: $lg-blue;
+        }
+        &.over_icon6 {
+          background: $lg-orange;
+        }
+        .overview_icon_img {
+          &.icon1 {
+            fill: $red;
+          }
+          &.icon2 {
+            fill: $green;
+          }
+          &.icon3 {
+            fill: $purple;
+          }
+          &.icon4 {
+            fill: $yellow;
+          }
+          &.icon5 {
+            fill: $blue;
+          }
+          &.icon6 {
+            fill: $orange;
+          }
+        }
+      }
+    }
+    .overview_text_arrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: $bg-grey;
+      margin-top: 1rem;
+      color: $green;
+      p {
+        color: $green;
+        &.over_value {
+          color: $bg-black;
+          font-weight: 500;
+        }
+      }
+      .overview_value_arrow {
+        display: flex;
+        align-items: center;
+        p {
+          margin-right: 8px;
+          .icon-red {
+            fill: $red;
+          }
+          .icon-green {
+            fill: $green;
+          }
+        }
+      }
+    }
+  }
+  //   }
+}
